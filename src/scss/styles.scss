@@ -1,0 +1,14 @@
+// SETTINGS 
+@import "./settings/reset";
+@import "./settings/colors";
+@import "./settings/fonts";
+@import "./settings/breakpoints";
+
+// COMPONENTS
+@import "./components/container.scss";
+@import "./components//menu-nav.scss";
+@import "./components/menu-nav-mobile.scss";
+@import "./components/menu-nav-desktop.scss";
+@import "./components/page.home.scss";
+@import "./components/footer.scss";
+@import "./components/modal.scss";

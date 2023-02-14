@@ -1,0 +1,117 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/breakpoints";
+
+.menu-nav__mobile {
+    position: relative;
+    width: 100%;
+    padding: 1.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 200;
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+
+    .menu-nav__sneakers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-nav__logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        img {
+            width: 100%;
+            max-width: 170px;
+            display: block;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-family: $font-family-primary;
+            font-weight: 700;
+            font-size: 16px;
+            color: $white;
+        }
+    }
+
+    .menu-nav__button {
+        margin-right: 20px;
+        transform: translateY(2px);
+
+        i {
+            font-size: 24px;
+            color: $black-light;
+        }
+
+        .button-exit {
+            display: none;
+        }
+
+        .button-menu {
+            display: block;
+            animation: active 400ms forwards;
+        }
+
+        &.active {
+            .button-menu {
+                display: none;
+            }
+
+            .button-exit {
+                display: block;
+                margin-right: 6px;
+                transform: translateX(4px);
+                animation: active 400ms forwards;
+            }
+        }
+
+        @keyframes active {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    .menu-nav__client {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cart {
+        margin-right: 30px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        img {
+            filter: brightness(0);
+        }
+    }
+
+    .user {
+        &:hover {
+            cursor: pointer;
+        }
+        
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Template Gandalf</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/4f294333f0.js" crossorigin="anonymous"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script type="module" src="app.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="menu-nav">
+        <div class="container">
+            <nav class="menu-nav__mobile">
+                <div class="menu-nav__sneakers">
+                    <div class="menu-nav__button">
+                        <div class="button-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+        
+                        <div class="button-exit">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="menu-nav__logo">
+                        <img src="./images/logo.svg" alt="logo">
+                    </div>
+                </div>
+
+                <div class="menu-nav__client">
+                    <div class="cart active-modal" data-button-modal="modal-cart">
+                        <img src="./images/icon-cart.svg" alt="Icone carrinho">
+                    </div>
+
+                    <div class="user">
+                        <img src="./images//image-avatar.png" alt="Imagem do usuário">
+                    </div>
+                </div>
+            </nav>
+
+            <div class="modal" data-modal="modal-cart">
+                <div class="modal__content">
+                    <div class="modal__box">
+                        teste
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-nav__shadow"></div>
+    
+            <div class="menu-mobile">
+                <ul>
+                    <li><a href="#">Exemplo</a></li>
+                    <li><a href="#">Exemplo</a></li>
+                    <li><a href="#">Exemplo</a></li>
+                    <li><a href="#">Exemplo</a></li>
+                    <li><a href="#">Exemplo</a></li>
+                </ul>
+            </div>
+    
+            <nav class="menu-nav__desktop">
+                <div class="menu-nav__sneakers">
+                    <div class="menu-nav__logo">
+                        <img src="./images/logo.svg" alt="logo">
+                    </div>
+        
+                    <div class="menu-desktop">
+                        <ul>
+                            <li><a href="#">Exemplo</a></li>
+                            <li><a href="#">Exemplo</a></li>
+                            <li><a href="#">Exemplo</a></li>
+                            <li><a href="#">Exemplo</a></li>
+                            <li><a href="#">Exemplo</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu-nav__client">
+                    <div class="cart active-modal" data-button-modal="modal-cart">
+                        <img src="./images/icon-cart.svg" alt="Icone carrinho">
+                    </div>
+
+                    <div class="user">
+                        <img src="./images//image-avatar.png" alt="Imagem do usuário">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-wrapper page-home">
+        <div class="container">
+            <section>
+                <div class="swiper images-products">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/image-product-1.jpg" alt="Imagem do Produto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/image-product-2.jpg" alt="Imagem do Produto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/image-product-3.jpg" alt="Imagem do Produto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/image-product-4.jpg" alt="Imagem do Produto">
+                        </div>
+                    </div>
+    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+                <div thumbsSlider="" class="swiper images-products-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/image-product-1.jpg" alt="Imagem do Produto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/image-product-2.jpg" alt="Imagem do Produto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/image-product-3.jpg" alt="Imagem do Produto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/image-product-4.jpg" alt="Imagem do Produto">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="description">
+                <div class="container">
+                    <small>Sneaker Company</small>
+
+                    <h2>Sapato Sneakers Edição Limitada</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, porro reprehenderit earum voluptatibus, corporis praesentium architecto veniam facilis dolorem blanditiis aut soluta perspiciatis, minima asperiores nobis quod officia aperiam in?
+                    </p>
+
+                    <div class="price">
+                        <div class="price-product">
+                            R$ 125,00
+                            <div class="price-discount">
+                                50%
+                            </div>
+                        </div>
+                        
+                        <div class="price-sale">R$ 250,00</div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="quantity">
+                            <div class="sub">-</div>
+                            <div class="qtd">0</div>
+                            <div class="amount">+</div>
+                        </div>
+    
+                        <button>
+                            <img src="./images/icon-cart.svg" alt="Icone carrinho">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer-wrapper menu-footer">
+        <div class="container">
+            <div class="footer-copyright">
+                <p>Jardel Lima</p>
+                <p>2023 - Front end mentor.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

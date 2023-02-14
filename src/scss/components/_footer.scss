@@ -1,0 +1,113 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/breakpoints";
+
+.menu-footer {
+    width: 100%;
+    background-color: $white;
+
+    .footer-container {
+        margin-bottom: 30px;
+
+        @media (min-width: $desktop) {
+            display: grid;
+            align-items: flex-end;
+            grid-template-columns: 1.2fr repeat(4, 0.8fr);
+        }
+
+        div {
+            &:nth-child(1) {
+                margin-bottom: 20px;
+
+                @media (min-width: $desktop) {
+                    margin-bottom: 0;
+                }
+
+                .footer-logo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    img {
+                        display: block;
+                        object-fit: contain;
+                        width: 100%;
+                        max-width: 60px;
+                        margin-bottom: 10px;
+                        margin-right: 14px;
+                        filter: brightness(0) invert(1);
+                    }
+
+                    h2 {
+                        font-family: $font-family-primary;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $white;
+                    }
+                }
+
+                p {
+                    font-family: $font-family-primary;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $white;
+                    letter-spacing: 1.2px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .footer-column {
+            margin-bottom: 20px;
+
+            @media (min-width: $desktop) {
+                margin-bottom: 12px;
+            }
+
+            ul {
+                list-style: none;
+
+                @media (min-width: $desktop) {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+
+            li + li {
+                margin-top: 10px;
+            }
+
+            a {
+                font-family: $font-family-primary;
+                font-size: 14px;
+                font-weight: 400;
+                color: $white;
+                letter-spacing: normal;
+
+                @media (min-width: $desktop) {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+
+        p {
+            font-family: $font-family-primary;
+            font-size: 12px;
+            font-weight: 400;
+            color: $black-light;
+        }
+    }
+}

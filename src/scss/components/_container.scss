@@ -1,0 +1,13 @@
+@import "../settings/breakpoints";
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 86rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @media (min-width: $desktop) {
+        padding: 0 3rem;
+    }
+}

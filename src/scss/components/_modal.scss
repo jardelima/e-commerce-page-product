@@ -1,0 +1,53 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/breakpoints";
+
+.modal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: 400ms;
+    z-index: 400;
+
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .modal__content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: 401;
+    }
+
+    .modal__box {
+        position: relative;
+        margin-top: 100px;
+        background-color: $white;
+        padding: 1rem;
+        width: 80%;
+        max-width: 700px;
+        border-radius: 6px;
+        z-index: 402;
+
+        @media (min-width: $desktop) {
+            margin-top: 200px;
+        }
+    }
+}
