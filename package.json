@@ -1,5 +1,5 @@
 {
-  "name": "template-gandalf",
+  "name": "e-commerce-page-product",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jardelima/template-gandalf.git"
+    "url": "git+https://github.com/jardelima/e-commerce-page-product.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/jardelima/template-gandalf/issues"
+    "url": "https://github.com/jardelima/e-commerce-page-product/issues"
   },
-  "homepage": "https://github.com/jardelima/template-gandalf#readme",
+  "homepage": "https://github.com/jardelima/e-commerce-page-product#readme",
   "description": ""
 }
