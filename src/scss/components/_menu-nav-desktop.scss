@@ -4,6 +4,7 @@
 
 .menu-nav__desktop {
     display: none;
+    font-family: $font-family-primary;
 
     @media (min-width: $desktop) {
         display: flex;
@@ -97,8 +98,47 @@
         justify-content: center;
     }
 
-    .cart {
+    .icon-cart {
         margin-right: 40px;
+        position: relative;
+
+        &.active {
+            .cart-active {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+
+        .cart-active {
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            top: -30px;
+            right: -8px;
+            background-color: $orange;
+            color: $white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            transition: 400ms;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                background-color: $orange;
+                position: absolute;
+                bottom: -3px;
+                left: 8px;
+                transform: rotate(45deg);
+                z-index: 1;
+            }
+        }
 
         &:hover {
             cursor: pointer;
