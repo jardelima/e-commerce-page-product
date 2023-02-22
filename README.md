@@ -2,7 +2,7 @@
 Esta é uma página de produto de uma loja e-commerce.
 
 ### O Projeto
-O projeto foi feito baseado no desafio do <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6 "target="_blank">Frontend Mentor</a>.
+O projeto foi feito baseado no desafio do [Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
 
 Nele você pode:
 - Adicionar o produto ao carrinho.
