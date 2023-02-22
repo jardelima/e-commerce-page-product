@@ -1,5 +1,6 @@
 # E-COMMERCE PAGE PRODUCT
-Esta é uma página de produto de uma loja e-commerce. <b>Página Responsiva.</b>
+Esta é uma página de produto de uma loja e-commerce. 
+<b>Página Responsiva.</b>
 
 ### O Projeto
 O projeto foi feito baseado no desafio do [Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
